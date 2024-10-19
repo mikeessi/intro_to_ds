@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>University admission helper</title>
+        {{ bootstrap.load_css() }}
+        <style>
+            pre {
+                background: green;
+                padding: 10px;
+            }
+            h2 {
+                margin-top: 20px;
+            }
+            footer {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <div class="container">
+                <a href="/">Index</a>
+                <a href="/statistics">Statistics</a>
+                <a href="/predictions">Predictions</a>
+            </div>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
