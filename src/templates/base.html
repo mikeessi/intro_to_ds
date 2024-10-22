@@ -26,17 +26,19 @@
             }
         </style>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <body style="background-color: rgb(202, 227, 247);">
+        <div class="col" style="margin-left: 15%; margin-right: 15%; background-color: white;">
+            <nav class="navbar navbar-expand-lg navbar-light mb-4">
+                <div class="container">
+                    <a href="/">Index</a>
+                    <a href="/statistics">Statistics</a>
+                    <a href="/predictions">Predictions</a>
+                </div>
+            </nav>
             <div class="container">
-                <a href="/">Index</a>
-                <a href="/statistics">Statistics</a>
-                <a href="/predictions">Predictions</a>
-            </div>
-        </nav>
-        <div class="container">
-            {% block content %}
-            {% endblock %}
+                {% block content %}
+                {% endblock %}
+            </div>    
         </div>
     </body>
 </html>
