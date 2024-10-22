@@ -1,10 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="row">
     <h1>
-        tähän tulee esittely/leipäteksti
+        Otsikko
     </h1>
+    <div class="col" style="max-width: 70%; margin-left: 15%; margin-right: 15%; padding-top: 2%;">
+        Choosing where to apply is hard for many of us. Even though it might appear as a simple question with a simple solution, it combines multiple difficult questions, such as deciding what you want to do when you grow up, which university you want to apply to and in which city you want to live. Trying to figure out these and more takes a lot of time, when you should be simultaneously trying to read for the matriculation examinations.
+        <br>
+        <br>
+        Our team has wanted to ease the stress of students and create a solution by analyzing the data of student elections from 2015 to 2024. Therefore we have nearly 10 years worth of data to use for our machine learning algorithm that we use in order to create a clear visualization of different factors. We will introduce these models on this website. 
+        <br>
+        <br>
+        There are already some useful sources for the applying process, such as <a href="https://vipunen.fi">vipunen.fi</a> and <a href="https://todistusvalinta.fi">todistusvalinta.fi</a>. Yet, these are often not enough. The score trends tend to change over time and the amount of students that are chosen might change as well. Our model predicts these changes. Thus if you are not sure where you could possibly get in, we will have the most accurate guess of the possible lowest score you need to get. 
+        <br>
+        <br>
+        Be sure to check that there have been no changes in the certificate selection. This is because people at the national board of education are discussing whether we should change the methods for certificate selection. Nowadays it is pretty hars, there is a lot of stress for the students who might not only need to read for the matriculation examinations, but also possibly even multiple entrance exams.
+        <br>
+        <br>
+        Right now, the certificate selection has 50 different tables to use for scoring the grade of the matriculation examinations. If the changes are applied, we would only have 11 different tables, which would obviously affect many of the score trends. Yet, if this happens, we can quickly modify the model to analyze this new system from now on.
+        <br>
+        <br>
+        There will most definitely be changes in the system over time. Nevertheless we need to be on track about how it affects the scores, for the students need to stay on track where they can realistically apply. We hope, that our solution brings more stability and feeling of stability for the students applying, so that the process of applying would not be so stressful.
+    </div>
 </div>
 
 {% endblock %}
