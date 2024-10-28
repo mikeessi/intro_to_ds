@@ -1,4 +1,5 @@
 from flask import render_template
+import json
 from src import app
 
 
@@ -12,4 +13,14 @@ def statistics():
 
 @app.route("/predictions")
 def predictions():
-    return render_template("predictions.html")
+    data = read_predictions()
+    return render_template("predictions.html", data=data)
+
+def read_predictions():
+    rows = []
+    with open("predictions.json") as file:
+        for line in file:
+            d = json.loads(line)
+            rows.append(d)
+    data = [row for row in rows if row["Vuosi"] == 2025]
+    return data
